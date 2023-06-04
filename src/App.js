@@ -22,10 +22,11 @@ function App() {
   );
 }
 
-function MyComponent() {
+function MyComponent(props) {
   return (
     <div>
-      <h1>My First Component</h1>
+      <h1>{props.header}</h1>
+      {/* <h1>My First Component</h1> */}
     </div>
   )
 }
