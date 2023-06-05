@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn <span>React</span> 
         </a>
       </header>
     </div>
@@ -23,12 +24,18 @@ function App() {
 }
 
 function MyComponent(props) {
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(count + 1);
+  };
+
   return (
     <div>
-      <h1>{props.header}</h1>
-      {/* <h1>My First Component</h1> */}
+      <h1>Count: {count}</h1>
+      <button onClick={handleClick}>Click me</button>
     </div>
-  )
+  );
 }
 
 export default App;
