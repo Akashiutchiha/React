@@ -101,3 +101,14 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+.not-found h1{
+  font-size: 50px;
+  color: #f1356d;
+  margin-bottom: 30px;
+
+}
+.not-found{
+  align-items: center;
+  justify-content: center;
+}
