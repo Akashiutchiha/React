@@ -20,12 +20,9 @@ render() {
     return (
     <form onSubmit={this.myChangeHandler}>
         {/* <h1>Hello {this.state.Author}</h1> */}
-        
-        <p>Enter your name:</p>
-        <input type="text" onChange={this.myChangeHandler} />
-        <p>Enter the title of your blog</p>
-        <input type="text" onChange={this.myChangeHandler} />
-        <p>Enter the body</p>
+        <p>Subscribe</p>
+
+        <label htmlFor="Name">Name </label>
         <input type="text" onChange={this.myChangeHandler} />
         <button type="submit">Submit</button>
     </form>
