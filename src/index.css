@@ -109,6 +109,14 @@
 
 }
 .not-found{
+  text-align: center;
   align-items: center;
   justify-content: center;
+}
+.footer{
+  padding-top: 20px;
+  text-align: center;
+  background-color: #f1356d;
+  height: 60px;
+
 }

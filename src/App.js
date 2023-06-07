@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Create from './create';
 import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
+import Footer from './Footer';
 
 function App() {
 
@@ -30,6 +31,8 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer />
+
       </div>
     </Router>
   );
