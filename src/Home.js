@@ -1,22 +1,18 @@
+import { useState } from "react";
+import BlogList from "./BlogList";
+
 const Home = () => {
+  const [blogs] = useState([
+    { title: 'My new website', body: 'lorem ipsum...', author: 'mario', id: 1 },
+    { title: 'Welcome party!', body: 'lorem ipsum...', author: 'yoshi', id: 2 },
+    { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
+  ])
 
-    function handleClick() {
-        console.log('hello, ninjas!');
-    }
-
-    function handleClickAgain(name) {
-        console.log('hello ' + name);
-    }
-
-    return ( 
-        <div className="home">
-            <h2>Home Page</h2>
-            <button onClick={handleClick}>click me</button>
-            <button onClick={() => 
-                handleClickAgain("mario")
-            }>click me again</button>
-        </div>
-    );
+  return (
+    <div className="home">
+      <BlogList blogs={blogs} title="Write a Blog" />
+    </div>
+  );
 }
-
+ 
 export default Home;
