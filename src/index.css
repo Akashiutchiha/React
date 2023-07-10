@@ -4,7 +4,8 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
+  color: wheat;
+
 }
 .navbar {
   padding: 20px;
@@ -29,9 +30,10 @@
   color: #f1356d;
 }
 .content {
-  max-width: 600px;
+  max-width: 800px;
   margin: 40px auto;
   padding: 20px;
+  min-height: auto;
 }
 
 /* blog previews / list */
@@ -114,9 +116,14 @@
   justify-content: center;
 }
 .footer{
+  color: white;
   padding-top: 20px;
   text-align: center;
   background-color: #f1356d;
   height: 60px;
+  margin-bottom: 0px;
 
+}
+body{
+  background-color: #333;
 }

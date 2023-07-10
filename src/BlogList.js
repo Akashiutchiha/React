@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import Form from "./Form";
 
 
 const BlogList = ({ blogs, title}) => {
@@ -17,7 +16,6 @@ const BlogList = ({ blogs, title}) => {
            
         </div>
         ))}
-                    <Form />
 
     </div>
     );
